@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root {
+  --orange: #ff7800;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.2rem solid var(--black);
+}
+* {
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  transition: all linear 0.2s;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  color: var(--black);
+  border: 0.2rem solid var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: none;
+}
+.btn:hover {
+  color: #fff;
+  background: var(--orange);
+}
+section,
+footer {
+  padding: 2rem 9%;
+}
+body {
+  background: #eee;
+}
+.heading {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--black);
+  padding: 2rem 0 3rem 0;
+}
+.heading span {
+  background: var(--orange);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem!important;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width:450px){
+
+  html{
+      font-size: 50%;
+  }
+
+  .heading{
+      font-size: 2.5rem;
+  }
+
+  .footer{
+      text-align: center;
+  }
+
+  .footer .box-container .box img{
+      margin: 2rem auto;
+  }
+
+}
